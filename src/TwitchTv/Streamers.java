@@ -66,6 +66,6 @@ public class Streamers extends User {
     return this.StreamTitle;
   }
 
-  
+
 
 }
