@@ -3,9 +3,8 @@ package TwitchTv;
 public class User {
 
 //Instance Variables 
-private String UserName;
-private int UserAge;
-
+private String Name;
+private int Age;
 /**
 * Constructor - creates new instance for user object
 * @param UserName = the name of the user
@@ -14,18 +13,32 @@ private int UserAge;
 */
 
 public User(String theUserName, int theUserAge) {
-  UserName = theUserName;
-  UserAge = theUserAge;
+  this.Name = theUserName;
+  this.Age = theUserAge;
 }
 
-public String getUserName() {
-  return UserName;
+
+public String getName() {
+  return this.Name;
 }
 
-public int getUserAge() {
-  return UserAge;
+public int getAge() {
+  return this.Age;
 }
 
+
+public boolean isBuy() {
+
+  if (this.Age >= 18) {
+    return true;
+  }
+
+  else{
+    return false; 
+  }
+
+
+}
 
 
 
