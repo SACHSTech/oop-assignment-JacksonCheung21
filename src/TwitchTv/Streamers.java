@@ -44,24 +44,27 @@ public class Streamers extends User {
     this.Followers += Num;
   }
 
-
+  // @return # of followers
   public double getFollowers() {
     return this.Followers;
   }
 
-
+  // @return # of viewrs
   public double getViewers() {
     return this.Viewers;
   }
   
+  // @return # of Subscribers
   public int getSubscribers() {
     return this.Subscribers;
   }
 
+  // @return what game streamer is playing
   public String getStreamerGame() {
     return this.Game;
   }
-
+  
+  // @return what the streamer title is 
   public String getStreamTitle() {
     return this.StreamTitle;
   }

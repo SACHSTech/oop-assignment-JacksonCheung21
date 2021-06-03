@@ -20,15 +20,17 @@ public class Viewer extends User {
     Followed = new ArrayList<>();
   }
 
+  // @return the amount of bits 
   public int getBits() {
     return this.Bits;
   }
 
-
+  // @return how much channel points 
   public int getPoints() {
     return this.ChannelPoints;
   }
 
+  // buy bits proccess 
   public void buyBits() {
     if (this.isBuy() == true){
       this.Bits += this.MoneySpent;
